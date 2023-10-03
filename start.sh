@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ ! -n "$1" ] ;then
+	echo "Please input commit message for git"
+        exit 0
+fi 
 
 # build file
 gitbook build .
