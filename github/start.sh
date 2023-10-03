@@ -4,6 +4,7 @@
 gitbook build .
 
 # mv generated files from _book to github
+rm -rf ./github/* !\(.git\)
 mv ./_book/* ./github
 
 # upload change to github
